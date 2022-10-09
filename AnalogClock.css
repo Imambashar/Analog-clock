@@ -1,0 +1,69 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #091921;
+
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-image: url(clock.png);
+    background-repeat: no-repeat;
+}
+
+.container:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: gold;
+    border-radius: 50%;
+    z-index: 10;
+    
+}
+
+#hr,#min,#sec{
+    position: relative;
+    border-radius: 10px;
+    transform-origin: bottom;
+
+}
+
+#hr{
+    width: 5px;
+    height: 85px;
+    background-color: blue;
+    bottom: 40px;
+    left: 2.5px;
+}
+
+#min{
+    width: 5px;
+    height: 120px;
+    background-color: red;
+    bottom: 55px;
+    right: 2.5px;
+}
+
+#sec{
+    width: 1px;
+    height: 150px;
+    background-color: gray;
+    bottom: 70px;
+    right: 5px;
+
+}
+
